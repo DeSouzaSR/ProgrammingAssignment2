@@ -33,13 +33,20 @@ cacheSolve <- function(x, ...) {
 }
 
 # Test
+cat("0\14") # Clear screen
 M <- matrix(c(3,2,1,1),2,2)
 N <- makeCacheMatrix(M)
 
+# Matrix
+cat("Matrix\n")
+print(M)
+
 # Returned after computation
-cacheSolve(N)
+cat("Inverse: returned after computation\n")
+print(cacheSolve(N))
 
 # Returned from cache
-cacheSolve(N)
+cat("Returned from cache\n")
+print(cacheSolve(N))
 
 
